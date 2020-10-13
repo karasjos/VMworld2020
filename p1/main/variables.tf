@@ -42,12 +42,6 @@ variable "My_subnets" {
     Subnet30-vpc201       = "172.30.30.0/24"
   }
 }
-/*================
-VM AMIs
-=================*/
-# variable "VM_AMI"               { default = "ami-07cda0db070313c52" } # Amazon Linux 2 AMI (HVM), SSD Volume Type - Frankfurt
-
-variable "VM_AMI"               { default = "ami-04590e7389a6e577c" } # Amazon Linux 2 AMI (HVM), SSD Volume Type - Oregon
 
 
 
