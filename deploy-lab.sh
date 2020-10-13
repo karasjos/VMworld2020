@@ -17,35 +17,35 @@ unset TF_VAR_AWS_account
 unset TF_VAR_host
 unset VM1_DNS
 
-DEF_ORG_ID="7421a286-xxx-xxxx-xxxx-779b83d75fb5"
+DEF_ORG_ID="a3606f12-0955-4546-b768-b0472fdfdcc2"
 #read -p "Enter your ORG ID (long format) [default=$DEF_ORG_ID]: " TF_VAR_my_org_id
 TF_VAR_my_org_id="${TF_VAR_my_org_id:-$DEF_ORG_ID}"
 #echo ".....Exporting $TF_VAR_my_org_id"
 export TF_VAR_my_org_id=$TF_VAR_my_org_id
 #echo ""
 
-DEF_TOKEN="gCs8WlleUW3..........zDdnCcbypDOV0QXxBwiWkfZVD6"
+DEF_TOKEN="44cyfhDg0xMoFbkh1tGYBdLxCxhJ9r2a6i931skAbbmZJeu1tpqOV1RmXmoHyScA"
 #read -p "Enter your VMC API token [default=$DEF_TOKEN]: " TF_VAR_vmc_token
 TF_VAR_vmc_token="${TF_VAR_vmc_token:-$DEF_TOKEN}"
 #echo ".....Exporting $TF_VAR_vmc_token"
 export TF_VAR_vmc_token=$TF_VAR_vmc_token
 #echo ""
 
-ACCOUNT="614........"
+ACCOUNT="021027617648"
 #read -p "Enter your AWS Account [default=$ACCOUNT]: " TF_VAR_AWS_account
 TF_VAR_AWS_account="${TF_VAR_AWS_account:-$ACCOUNT}"
 #echo ".....Exporting $TF_VAR_AWS_account"
 export TF_VAR_AWS_account=$TF_VAR_AWS_account
 #echo ""
 
-ACCESS="AKIAY........."
+ACCESS="AKIAQJZKX7NYICINZLHF"
 #read -p "Enter your AWS Access Key [default=$ACCESS]: " TF_VAR_access_key
 TF_VAR_access_key="${TF_VAR_access_key:-$ACCESS}"
 #echo ".....Exporting $TF_VAR_access_key"
 export AWS_ACCESS_KEY_ID=$TF_VAR_access_key
 #echo ""
 
-SECRET="7M/qn7.........."
+SECRET="QejhdlnA2SDJ7AgKx+xtIOvlk2xUo/YdjvDJ3k8E"
 #read -p "Enter your AWS Secret Key [default=$SECRET]: " TF_VAR_secret_key
 TF_VAR_secret_key="${TF_VAR_secret_key:-$SECRET}"
 #echo ".....Exporting $TF_VAR_secret_key"
