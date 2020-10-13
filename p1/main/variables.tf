@@ -24,8 +24,8 @@ sa-east-1	      South America (São Paulo)
 variable "AWS_account"  {}
 variable "vmc_token"    {}
 variable "my_org_id"    {}
-variable "AWS_region"   {default = "us-west-2"}
-variable "key_pair"     {default = "set-emea-oregon" }
+variable "AWS_region"   {default = "us-east-1"}
+#variable "key_pair"     {default = "set-emea-oregon" } not needed
 
 /*================
 Subnets IP ranges
@@ -34,12 +34,12 @@ variable "My_subnets" {
   default = {
 
     SDDC_Mngt             = "10.10.10.0/23"
-    SDDC_def              = "192.168.1.0/24"
+    SDDC_def              = "192.168.0.0/24"
   
-    VPC201                = "172.201.0.0/16"
-    Subnet10-vpc201       = "172.201.10.0/24"
-    Subnet20-vpc201       = "172.201.20.0/24"
-    Subnet30-vpc201       = "172.201.30.0/24"
+    VPC201                = "172.30.0.0/16"
+    Subnet10-vpc201       = "172.30.10.0/24"
+    Subnet20-vpc201       = "172.30.20.0/24"
+    Subnet30-vpc201       = "172.30.30.0/24"
   }
 }
 /*================
