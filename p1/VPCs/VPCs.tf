@@ -118,11 +118,11 @@ resource "aws_security_group" "SG-VPC201" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
-    description = "Allow MySQL"
-    from_port = 3306
-    to_port = 3306
+    description = "Allow RDS"
+    from_port = 1521
+    to_port = 1521
     protocol = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["192.168.0.0/16"]
   }
   ingress {
     description = "Allow iPERF3"
@@ -169,15 +169,6 @@ resource "aws_default_security_group" "default" {
   }
 }
 
-
-/*==================
-  S3 VPC end point
-===================*/
- resource "aws_vpc_endpoint" "s3" {
-   vpc_id          = aws_vpc.vpc201.id
-   service_name    = "com.amazonaws.${var.region}.s3"
-   route_table_ids = [aws_default_route_table.vpc1-RT.id]
- }
 
 
 /*===================================
